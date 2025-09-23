@@ -16,12 +16,15 @@ $link =mysqli_query($conn, "select * from user");
      <!-- bootstrap css -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- bootstrap css end -->
+
+  
 </head>
 <body>
 
 
+
 <div class="container my-4">
-<table class="table table-striped">
+<table class="table table-striped text-center">
   <thead class="bg-primary text-white">
     <tr >
       <th scope="col" >ID</th>

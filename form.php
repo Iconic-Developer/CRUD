@@ -22,5 +22,11 @@ $city = $_POST['city'];
 
 $link = mysqli_query ($conn, "insert into user (ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD, ADDRESS, GENDER, CITY, STATE) values (NULL, '$firstName', '$lastName', '$email', '$password', '$address', '$gender', '$city', '$state')");
 
-
+if($link){?>
+<script>
+    window.location.href="data.php";
+</script>
+    
+<?php
+}
 };
