@@ -24,13 +24,13 @@
     </div>
    </div>
 
-    <form action="form.php" class="row g-3">
+    <form action="form.php" method="post" class="row g-3">
 
        <div class="col-md-6">
     <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="fname">
   </div>
   <div class="col-md-6">
-    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="sname">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lname">
   </div>
 
   <div class="col-md-6">
@@ -48,10 +48,10 @@
  
   <div class="col-md-4">
     <label for="inputState" class="form-label">Gender</label>
-    <select id="inputState" class="form-select">
-      <option selected name="choose">Choose...</option>
-      <option name="male">Male</option>
-      <option name="female">Female</option>
+    <select id="inputState" class="form-select" name="name">
+      <option selected value="choose">Choose...</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
     </select>
   </div>
 
@@ -62,18 +62,18 @@
 
   <div class="col-md-4">
     <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select">
+    <select id="inputState" class="form-select" name="state">
       <option selected name="choose">Choose...</option>
-      <option name="Kolkata">Kolkata</option>
-      <option name="Mumbai">Mumbai</option>
-      <option name="Bangalore">Bangalore</option>
-      <option name="Chennai">Chennai</option>
+      <option value="West Bengal">West Bengal</option>
+      <option value="Maharastra">Maharastra</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Goa">Goa</option>
     </select>
   </div>
 
  
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" name="submit" value="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
 
