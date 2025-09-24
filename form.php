@@ -25,6 +25,7 @@ $link = mysqli_query ($conn, "insert into user (ID, FIRST_NAME, LAST_NAME, EMAIL
 if($link){?>
 <script>
     window.location.href="data.php";
+
 </script>
     
 <?php

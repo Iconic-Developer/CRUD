@@ -23,7 +23,7 @@ while($row=mysqli_fetch_assoc($res)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Here</title>
+    <title>Update Details</title>
 
     <!-- bootstrap css -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -44,7 +44,7 @@ while($row=mysqli_fetch_assoc($res)){
 
    <div class="row text-center mb-4 my-4">
     <div class="col">
-      <h1>Register</h1>
+      <h1>Update Details</h1>
     </div>
    </div>
 
@@ -104,7 +104,7 @@ while($row=mysqli_fetch_assoc($res)){
 
  
   <div class="col-12">
-    <button type="submit" name="update" value="submit" class="btn btn-primary">Updata</button>
+    <button type="submit" name="update" value="submit" class="btn btn-primary">Update</button>
   </div>
 </form>
 

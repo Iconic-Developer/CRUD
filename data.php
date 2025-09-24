@@ -19,11 +19,15 @@ $link =mysqli_query($conn, "select * from user");
 
   
 </head>
-<body>
+<body >
 
-
+<div class="container text-muted text-center my-3">
+  <h2>List of Users</h2>
+</div>
 
 <div class="container my-4">
+
+<div class="table-responsive">
 <table class="table table-striped text-center">
   <thead class="bg-primary text-white">
     <tr >
@@ -40,9 +44,13 @@ $link =mysqli_query($conn, "select * from user");
   </thead>
   <tbody>
     <?php
-    while($res=mysqli_fetch_assoc($link)){?>
+    if($link-> num_rows >0){
+    while($res=mysqli_fetch_assoc($link)){
+      
+      ?>
     
-
+    
+      
     <tr>
      <td><?php echo $res['ID'];?></td>
      <td><?php echo $res['FIRST_NAME'];?></td>
@@ -56,10 +64,18 @@ $link =mysqli_query($conn, "select * from user");
      <a href="delete.php?id=<?php echo $res['ID'];?>"><button class="btn btn-danger">DELETE</button></a></td>
     </tr>
     <?php
-    }?>
+    }
+    }
+    else{echo "<tr ><td class='nodata' colspan='9' >No Records Found</td></tr>";}
+    ?>
     
   </tbody>
 </table>
+</div>
+
+<div class="container text-center">
+ <a href="index.html"> <button class="btn btn-large btn-success">Creat Account</button></a>
+</div>
 
 </div>
 
