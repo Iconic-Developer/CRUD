@@ -7,7 +7,7 @@ $link= mysqli_query($conn, "delete from user where ID='$id' ");
 if($link){
     ?>
     <script>
-        window.location.href="data.php";
+        window.location="data.php";
     </script>
     <?php
 }

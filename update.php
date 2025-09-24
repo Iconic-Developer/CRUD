@@ -140,7 +140,7 @@ $city = $_POST['city'];
     $link=mysqli_query($conn,"update user set ID='$id', FIRST_NAME='$firstName', LAST_NAME='$lastName', EMAIL='$email', PASSWORD='$password', ADDRESS='$address', GENDER='$gender', CITY='$city', STATE='$state' where ID='$id'");
     if($link){?>
 <script>
-    window.location.href="data.php";
+    window.location="data.php";
    
 </script>
 <?php
